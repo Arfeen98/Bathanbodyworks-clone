@@ -1,0 +1,63 @@
+#mainbody
+{
+    /* border: salmon 2px solid; */
+    display: flex;
+    gap: 20px;
+}
+#mainbody>div:nth-child(2)
+{
+    
+    width: 100%;
+    height: inherit;
+}
+
+
+
+
+
+#container1
+{
+    /* border: solid; */
+    width: 15%;
+    height: inherit;
+    margin-left: 15px;
+}
+a
+{
+    color: black;
+  
+   
+      font-size: 18px;
+    text-decoration: none;
+}
+
+.sidep{text-decoration: none; color:#666666}
+.sidep:hover {text-decoration: underline;}
+.sidep{
+    color: #666;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+  
+    font-size: 16px;
+font-weight:
+100;
+font-style:normal;
+
+}
+
+@media all and (min-width:381px) and (max-width:700px)
+     {
+        #mainbody>div:nth-child(1)
+        {
+            /* border: salmon 2px solid; */
+            display: none;
+        }
+     }
+
+     @media all and (min-width:50px) and (max-width:380px)
+     {
+        #mainbody>div:nth-child(1)
+        {
+            /* border: salmon 2px solid; */
+            display: none;
+        }
+     }

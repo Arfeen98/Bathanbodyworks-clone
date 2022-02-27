@@ -1,0 +1,82 @@
+body {
+    background: none repeat scroll 0 0 #fff;
+    color: #666;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    /* font-size: 12px; */
+   }
+#main{
+  display:flex;
+}
+/* #left{
+  width:210px;
+  height:1654px;
+  border:1px solid red;
+} */
+#right{
+  width: 95%;
+  height:inherit;
+  /* margin-left:220px; */
+  margin-left: 5px;
+}
+.categories{
+  display:flex;
+  width:100%;
+  height:350px;
+  border:none;
+}
+.inner{
+  width:100%;
+  height:450px;
+  margin-left: 20px;
+  border:none;
+  text-align: center;
+}
+.image{
+width:100%;
+height:280px;
+border:none;
+margin-left:10px;
+}
+.image>img{
+  width:100%;
+  height:250px;
+}
+.image+button{
+  width:80%;
+  height: 40px;
+  margin: auto;
+  border:2px solid black;
+  background-color: white;
+  font-weight: bold;
+  color:black; 
+}
+.image+button:hover{
+  width:80%;
+  height: 40px;
+  margin: auto;
+  border:2px solid black;
+  background-color: black;
+  font-weight: bold;
+  color:white; 
+} 
+.paradise{
+  margin-top: 10px;
+}
+p{
+  font-size: 20px;
+}
+#horizent {
+  width: auto;
+  height: 2px;
+  color: #666;
+}
+#america
+{
+  width: 100%;
+}
+.pic{
+  width:105%;
+}
+#bot{
+  margin-left: 75px;
+}

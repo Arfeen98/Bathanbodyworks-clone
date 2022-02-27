@@ -1,0 +1,65 @@
+  
+  
+  .container{
+        height: inherit;
+        width: 80%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .headContainer{
+        height:inherit;
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    .imgSize{
+        height:80px;
+        width: 100%;
+    }
+    .line{
+        font-size: 16px;
+        text-align: right;
+
+        color: rgb(255, 60, 0);
+    }
+    .bodyContainer{
+        height:auto;
+        width: 50%;
+         margin-left:40%; 
+        /* border: yellow 2px solid; */
+        /* text-align: left; */
+        color: rgb(143, 139, 139);
+        font-family: 'Corbel Light';
+        font-size: 20px;
+    }
+    #submit {
+        width: 100%;
+        margin-left: 5%;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 2px;
+      }
+ #loingid
+ {
+    color: rgb(14, 13, 13);
+    font-family: 'Corbel Light';
+    font-size: 25px; 
+    text-decoration: none;
+    font-weight: bold;
+    
+ }
+
+ /* .para
+ { */
+     /* text-align: center;
+ }
+
+ /* input
+ {
+     width: 800px;
+ } */
+ a{
+     color: #666666;
+     text-decoration: none;
+ }
+ 

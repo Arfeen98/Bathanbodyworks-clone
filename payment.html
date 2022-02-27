@@ -1,0 +1,202 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            display: flex;
+            background-color: #1c2938;
+            color: white;
+            justify-content: space-between;
+            height: 50px;
+            padding: 25px 0 0 20px;
+            font-family: monospace;
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+        }
+        .left {
+            width: 70%;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-weight: 700;
+            font-size: 22px;
+        }
+        .right {
+            display: flex;
+            justify-content: space-evenly;
+            width: 30%;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        a:hover {
+            color: aqua;
+        }
+
+        /* payment page */
+        #container {
+            display: flex;
+            height: 80vh;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+        }
+        .card {
+            width: 22%;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: rgb(255, 0, 0) 0px 5px 15px;
+            /* background-color: rgb(196, 255, 196); */
+        }
+        .amt {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 800;
+            margin: 10px 0px;
+        }
+        .cardNo,
+        .cvv,
+        .expiry {
+            color: gray;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            padding: 10px 0;
+        }
+        .cvv {
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        #cardNumber {
+            width: 90%;
+            padding: 8px;
+            letter-spacing: 1px;
+        }
+        input {
+            padding: 7px;
+            width: 80%;
+            border-radius: 5px;
+            border-color: lightgray;
+        }
+        #name {
+            width: 90%;
+        }
+        .cardDetails {
+            display: flex;
+        }
+        .submit {
+            text-align: center;
+        }
+        button {
+            background-color: #1c2938;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            width: 70%;
+            margin: 20px 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover {
+            cursor: pointer;
+            color: gray;
+        }
+        #container{
+            background-color: rgb(158, 203, 255);
+            width: 100%;
+            margin: auto;
+            height: 100vh;
+        }
+        </style>
+    </head>
+    <body>
+
+        <!-- Payment Page -->
+        <div id="container">
+        <div class="card">
+            <div class="amt">
+            <p>Total Amount</p>
+            <p id="amount"></p>
+            </div>
+            <p class="cardNo">CARD NUMBER</p>
+            <input
+            type="number"
+            name="cardNumber"
+            id="cardNumber"
+            value="1234567890987"
+            required
+            />
+            <p class="cardNo">NAME</p>
+            <input type="text" name="name" id="name" value="" required />
+
+            <div class="cardDetails">
+            <div class="expiry">
+                <p class="expiry">EXPIRY</p>
+                <input type="month" name="expiry" value="2022-02" id="expiry"  required  />
+            </div>
+
+            <div class="box-3">
+                <p class="cvv">CVV</p>
+                <input   name="number" type="text"  id="cvv" value="098" maxlength="3"required/>
+            </div>
+            </div>
+            <div class="submit">
+            <button type="submit" id="btn">Make Payment</button>
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>
+
+    <script>
+    var totalAmt = JSON.parse(localStorage.getItem("totalamt"));
+
+    console.log(totalAmt);
+    
+    var amount = document.querySelector("#amount");
+    // amount.innerText = `₹${totalAmt}`; 
+    // amount.style.background = "lightgray";
+    // amount.style.padding = "3px 5px";
+    // amount.style.borderRadius = "5px";
+    
+    document.querySelector("button").addEventListener("click", function () {
+        var name = document.querySelector("#name").value;
+        var cardNumber = document.getElementById("cardNumber").value;
+        var expiry = document.querySelector("#expiry").value;
+        var cvv = document.querySelector("#cvv").value;
+
+        if (name.length && cardNumber.length && expiry && cvv) {
+        console.log(name, cardNumber, expiry, cvv);
+        if (
+            cardNumber === "1234567890987" &&
+            expiry <= "2022-02" || "2023-02" ||"2024-02" || "2025-02" &&
+            cvv <= "098"
+        ) {
+            var otp = prompt("Enter Your OTP");
+            // console.log(otp)
+            if (otp === "000000") {
+            localStorage.removeItem("cartPage");
+            window.location.href = "succss.html";
+            alert("Payment is Successful");
+         
+            }
+        } else {
+            alert("Wrong Credentials");
+            
+        }
+        } else {
+        alert("Please fill all the fields");
+        }
+      
+    });
+    </script>
