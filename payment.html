@@ -184,7 +184,7 @@
         ) {
             var otp = prompt("Enter Your OTP");
             // console.log(otp)
-            if (otp === "000000") {
+            if (otp <= "999999") {
             localStorage.removeItem("cartPage");
             window.location.href = "succss.html";
             alert("Payment is Successful");
