@@ -6,4 +6,4 @@ In this project we have tried to manipulate dom elements,Styling using css and t
 we have learned in Unit-2 in the Masai School, we were able to clone the website in 5 days with the same looking and some features.
 
 
-it was great experience
+It was great 
