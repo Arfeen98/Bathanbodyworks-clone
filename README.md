@@ -1,3 +1,4 @@
+[Bath.docx](https://github.com/Arfeen98/Bathanbodyworks-clone/files/8364117/Bath.docx)
 Project: Make a clone of Bath & Body Works website.
 
 Cloned-Website: https://arfeen98.github.io/Bathanbodyworks-clone
