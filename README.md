@@ -17,7 +17,8 @@ In this project we have tried to manipulate Dom elements, Styling using CSS and 
 For storing all data we used localStorage.
 Snapshots 📷
 •	 page (Home page)
- Bath&Body.png
+<img src='./bathandbodyicon.jpg' alt='logo'>
+ 
 
 
 
