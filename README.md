@@ -31,7 +31,7 @@ Snapshots 📷
   
 •   Shop By Category
 
-<img src='./Category.png>
+<img src='./Category.png'>
 
 •	Cartage
   
