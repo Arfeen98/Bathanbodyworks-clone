@@ -24,14 +24,14 @@ Snapshots 📷
 
 
 •	Body care Page
+
+<img src='./Home.png'>
   
 •	Implement Sort By and Filters  Page
   
+•   Shop By Category
 
-
-
-
-
+<img src='./Category.png'>
 
 •	Cartage
   
